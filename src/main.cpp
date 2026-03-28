@@ -1,7 +1,8 @@
-#include <iostream>
+#include "MathQuiz.h"
 
 int main(int argc, char *argv[])
 {
-    std::cout << "Hello, World!" << std::endl;
+    MathQuiz quiz;
+    quiz.run();
     return 0;
 }
