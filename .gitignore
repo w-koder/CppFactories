@@ -45,3 +45,6 @@
 .vscode/
 
 build/
+
+# CMake user presets
+CMakeUserPresets.json
