@@ -6,7 +6,7 @@ C++20 factories for unit tests and mock object
 - cmake
 - conan
 
-# How to build
+# How to build manually
 1.
 ```bash
 conan profile detect --name mycpp23
@@ -24,4 +24,14 @@ conan install . --output-folder=build --build=missing --profile=mycpp23
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
 cmake --build .
+```
+
+# How to build with build.sh
+Simply run the script from the project root directory:
+```bash
+./build.sh
+```
+To clean the build artifacts, run:
+```bash
+./build.sh clean
 ```
