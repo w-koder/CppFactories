@@ -1,10 +1,11 @@
 #include "MathQuiz.h"
 #include "RandomGenerator.h"
 #include "UserInteraction.h"
+#include "factories/Factory.h"
 
 MathQuiz::MathQuiz()
-    : randomGenerator(std::make_unique<RandomGenerator>()),
-      userInteraction(std::make_unique<UserInteraction>()),
+    : randomGenerator(Factory<IRandomGenerator, RandomGenerator>::getInstance().createObject()),
+      userInteraction(Factory<IUserInteraction, UserInteraction>::getInstance().createObject()),
       correctCount(0),
       totalQuestions(0)
 {
