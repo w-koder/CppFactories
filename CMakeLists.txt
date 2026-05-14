@@ -21,7 +21,5 @@ target_include_directories(${BINARY_NAME} PRIVATE src/)
 add_executable(${TEST_BINARY_NAME} ${TEST_SOURCES})
 
 # Link the test executable with GTest
-find_package(GTest REQUIRED gtest_main)
-
-target_link_libraries(${TEST_BINARY_NAME} ${GTest_LIBRARIES})
-target_include_directories(${TEST_BINARY_NAME} PRIVATE ${GTest_INCLUDE_DIRS})
+find_package(GTest REQUIRED)
+target_link_libraries(${TEST_BINARY_NAME} gtest::gtest)
