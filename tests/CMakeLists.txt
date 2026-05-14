@@ -6,7 +6,7 @@ add_executable(g_tests
 # Link against GTest and the project library
 target_link_libraries(g_tests 
     PRIVATE 
-        GTest::gtest_main 
+        gtest::gtest 
         dummy_app_lib
 )
 

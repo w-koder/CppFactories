@@ -8,7 +8,7 @@ public:
     RandomGenerator();
     
     // Generate a random number between min and max (inclusive)
-    int generateNumber(int min = 1, int max = 10) override;
+    int generateNumber(int min, int max) override;
     
     // Generate a random operation
     Operation generateOperation() override;

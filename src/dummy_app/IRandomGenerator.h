@@ -8,7 +8,7 @@ public:
     virtual ~IRandomGenerator() = default;
     
     // Generate a random number between min and max (inclusive)
-    virtual int generateNumber(int min = 1, int max = 10) = 0;
+    virtual int generateNumber(int min, int max) = 0;
     
     // Generate a random operation
     virtual Operation generateOperation() = 0;
