@@ -1,4 +1,4 @@
-#include "MathQuiz.h"
+#include "dummy_app/MathQuiz.h"
 
 int main(int argc, char *argv[])
 {
